@@ -32,8 +32,8 @@ WHERE rental_duration > 0;
 
 
 # What is the shortest and longest rental period?
--- show rental_duration with min(), max()
-SELECT min(rental_duration) AS "shortest rental period", max(rental_duration) AS "longest rental period"
+-- show rental_duration with MIN(), MAX()
+SELECT MIN(rental_duration) AS "shortest rental period", MAX(rental_duration) AS "longest rental period"
 FROM film;
 
 # What are the shortest and longest movie duration? 
@@ -43,12 +43,12 @@ SELECT *
 FROM film;
 
 -- get the shortest and longest movie duration using "length" column
-SELECT min(length) AS min_duration, max(length) AS max_duration
+SELECT MIN(length) AS min_duration, MAX(length) AS max_duration
 FROM film; 
 
 # What's the average movie duration?
 -- Calculate the mean of movie duration
-SELECT sum(length)/COUNT(title) AS avg_movie_duration
+SELECT SUM(length)/COUNT(title) AS avg_movie_duration
 FROM film;
 
 # What's the average movie duration expressed in format (hours, minutes)?
@@ -83,11 +83,13 @@ ORDER BY title_length DESC;
 -- show the length of the longest film title
 SELECT title AS "longest film title", length AS "length of the film"
 FROM film 
-ORDER BY length(title) DESC
+ORDER BY LENGTH(title) DESC
 LIMIT 1;
 
--- show the length of the longest film title using max()
+-- show the length of the longest film title using MAX()
+# with the query above, you have to know the number of the longest film title in your table to set the LIMIT number
+# therefore, it is more simpler with MAX()
 SELECT title AS "longest film title", length AS "length of the film"
-FROM film 
-WHERE length(title) = (SELECT MAX(length(title)) from film);
+FROM film
+WHERE LENGTH(title) = (SELECT MAX(length(title)) from film);
 
