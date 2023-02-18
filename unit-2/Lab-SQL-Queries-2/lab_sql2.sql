@@ -88,7 +88,7 @@ LIMIT 1;
 
 -- show the length of the longest film title using MAX()
 # with the query above, you have to know the number of the longest film title in your table to set the LIMIT number
-# therefore, it is more simpler with MAX()
+# therefore, it is simpler with MAX()
 SELECT title AS "longest film title", length AS "length of the film"
 FROM film
 WHERE LENGTH(title) = (SELECT MAX(length(title)) from film);
