@@ -7,7 +7,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 ============ ACTIVITY ============
 
-- [Unit 2](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2)
+- [Unit 2 SQL](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2)
 
 
 
