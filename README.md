@@ -14,7 +14,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 =========== HOMEWORK ===========
 
 ### Unit 1 Intro | Python | Machine Learning (ML) | SQL 
-- [Lab | Customer Analysis](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit_2/LAB_SQL_intro/intro.sql)
+- [Lab | Customer Analysis](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-1/week-3/lab-customer-analysis-round-8.ipynb)
 
 ### Unit 2 SQL
 - [Lab | SQL Intro](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/LAB-SQL-intro/intro.sql)
