@@ -27,10 +27,9 @@ FROM card;
 # Look at the clients in district id's lower than 50
 SELECT client_id, district_id  
 FROM client
-WHERE district_id  < 50;     
+WHERE district_id < 50;     
 
 # Take loans with a debt higher than 100000
-
 SELECT loan_id, (amount - payments) AS debt
 FROM loan
 WHERE (amount - payments) > 100000;
