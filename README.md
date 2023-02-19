@@ -5,10 +5,13 @@ This repository holds documents related to my Data Analytics Bootcamp at Ironhac
 All documents are for learning purposes. Feel free to fork, download and use as your own. :)
 
 
+=========== ACTIVITY ===========
+
+[Unit 2](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2)
 
 
 
-===========HOMEWORK===========
+=========== HOMEWORK ===========
 
 #### Unit 1
 - [Lab | Customer Analysis](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit_2/LAB_SQL_intro/intro.sql)
