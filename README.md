@@ -17,7 +17,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | Customer Analysis](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit_2/LAB_SQL_intro/intro.sql)
 
 ### Unit 2 SQL
-- [Lab | SQL Intro](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit_2/LAB_SQL_intro/intro.sql)
+- [Lab | SQL Intro](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/LAB-SQL-intro/intro.sql)
 - [Lab | SQL Queries 2](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/Lab-SQL-Queries-2/lab_sql2.sql)
 
 Extra:
