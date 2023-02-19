@@ -78,3 +78,4 @@ Refer to the bank database case study using files_for_activities/case_study_bank
 # 2.01 Activity 4
 Refer to files_for_activities/mysql_dump.sql database. Load it to Sequel Pro, and there you will find a bank database which we will use for the following exercise. This is the same database used for the class example. Keep using the bank database for iterations that are related to it (3 and 4).
 
+[2.01 Activity 4](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/2.01-activity-4.sql)
