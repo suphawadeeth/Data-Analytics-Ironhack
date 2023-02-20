@@ -76,8 +76,12 @@ WHERE length > (60*3);
 SELECT *
 FROM customer;
 
--- Get the name & email using concat()
-SELECT CONCAT(first_name, " ", last_name, " - ", email) AS customer_info
+-- Get the name & email using concat() + Change name written as the first letter - capital, the rest - lower cases
+SELECT CONCAT(upper(LEFT(first_name, 1)), lower(RIGHT(first_name, length(first_name) - 1)), " ", last_name, " - ", lower(email)) AS customer_info
+FROM customer;
+
+-- Or use substring() 
+SELECT CONCAT(upper(LEFT(first_name, 1)), lower(SUBSTRING(first_name, 2, length(first_name))), " ", last_name, " - ", lower(email)) AS customer_info
 FROM customer;
 
 
