@@ -51,10 +51,17 @@ FROM film;
 SELECT SUM(length)/COUNT(title) AS avg_movie_duration
 FROM film;
 
+-- Shortest way
+SELECT avg(length)
+FROM film; 
+
 # What's the average movie duration expressed in format (hours, minutes)?
--- 
 SELECT TRUNCATE(SUM(length / 60)/COUNT(title), 0) AS "hours", TRUNCATE(SUM(length % 60)/COUNT(title), 2) AS "minutes"
 FROM film;
+
+-- Shortest way
+SELECT TRUNCATE(avg(length)/60, 0) AS hours, TRUNCATE(avg(length)%60, 2) AS minutes
+FROM film; 
 
 
 # How many movies longer than 3 hours?
