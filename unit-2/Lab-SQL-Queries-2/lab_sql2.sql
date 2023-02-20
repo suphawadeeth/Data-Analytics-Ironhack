@@ -87,20 +87,22 @@ FROM customer;
 
 # What's the length of the longest film title?
 -- check the title name & title length
-SELECT title, LENGTH(title) AS title_length
+SELECT title, LENGTH(title) AS title_length, length AS film_length
 FROM film
 ORDER BY title_length DESC;
 
 -- show the length of the longest film title
-SELECT title AS "longest film title", length AS "length of the film"
+# note: SELECT TOP <N> * FROM <table> is similar to LIMIT <N>
+SELECT title AS "longest film title", length AS "film_length"
 FROM film 
 ORDER BY LENGTH(title) DESC
 LIMIT 1;
 
--- show the length of the longest film title using MAX()
+-- Another way: show the length of the longest film title using MAX()
 # with the query above, you have to know the number of the longest film title in your table to set the LIMIT number
-# therefore, it is simpler with MAX()
-SELECT title AS "longest film title", length AS "length of the film"
+# therefore, it is simpler with MAX() because we don't have to watch out how many longest title we have
+SELECT title AS "longest film title", length AS "film_length"
 FROM film
 WHERE LENGTH(title) = (SELECT MAX(length(title)) from film);
+
 
