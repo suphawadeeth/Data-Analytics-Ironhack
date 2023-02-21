@@ -77,11 +77,11 @@ SELECT *
 FROM customer;
 
 -- Get the name & email using concat() + Change name written as the first letter - capital, the rest - lower cases
-SELECT CONCAT(upper(LEFT(first_name, 1)), lower(RIGHT(first_name, length(first_name) - 1)), " ", last_name, " - ", lower(email)) AS customer_info
+SELECT CONCAT(UPPER(LEFT(first_name, 1)), LOWER(RIGHT(first_name, LENGTH(first_name) - 1)), " ", last_name, " - ", LOWER(email)) AS customer_info
 FROM customer;
 
 -- Or use substring() 
-SELECT CONCAT(upper(LEFT(first_name, 1)), lower(SUBSTRING(first_name, 2, length(first_name))), " ", last_name, " - ", lower(email)) AS customer_info
+SELECT CONCAT(UPPER(LEFT(first_name, 1)), LOWER(SUBSTRING(first_name, 2, LENGTH(first_name))), " ", last_name, " - ", LOWER(email)) AS customer_info
 FROM customer;
 
 
