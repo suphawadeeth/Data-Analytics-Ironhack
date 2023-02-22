@@ -104,3 +104,13 @@ date_sub(
 	SELECT rental_date FROM rental
     ORDER BY rental_date DESC LIMIT 1
     );
+
+-- Or use datediff() < 30 (represents 30 days from the reference point)
+SELECT COUNT(*) AS rental_lastmonth
+FROM rental
+WHERE DATEDIFF(
+(
+	SELECT rental_date from rental
+    ORDER BY rental_date DESC
+    LIMIT 1), 
+	(rental_date)) < 30;
