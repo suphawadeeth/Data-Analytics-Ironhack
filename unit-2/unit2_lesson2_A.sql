@@ -60,12 +60,10 @@ WHERE k_symbol = "";
 
 # Count how many transactions have empty and non-empty k_symbol (in one query).
 
-SELECT SUM(CASE 
-	WHEN k_symbol = "" 
+SELECT SUM(CASE WHEN k_symbol = "" 
     THEN 1 ELSE 0 
     END) AS empty_k_symbol, 
-    SUM(CASE 
-    WHEN k_symbol = "" 
+    SUM(CASE WHEN k_symbol = "" 
     THEN 0 ELSE 1 
     END) AS non_empty_k_symbol
 FROM trans;
