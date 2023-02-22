@@ -49,7 +49,7 @@ ORDER BY date DESC
 LIMIT 10;
 
 #b) Use DATEDIFF for calculating the days. Complete the following:
-
+-- Calculating 30 days 
 SELECT trans_id, DATE_FORMAT(date,"%Y-%m-%d") as correct_date, datediff((
 	SELECT DATE_FORMAT(date,"%Y-%m-%d") as correct_date
 	FROM trans
@@ -62,4 +62,27 @@ WHERE datediff((
 	FROM trans
 	ORDER BY date DESC
 	LIMIT 1
-), DATE_FORMAT(date,"%Y-%m-%d")) < 2  ;
+), DATE_FORMAT(date,"%Y-%m-%d")) < 30  ;
+
+-- Count(), for answering question "how many"
+-- Try: calculate without transform "date" to date time format, because, anyway, we do not want to disply datetime. (We want to disply the number of activity)
+SELECT COUNT(*)
+FROM trans
+WHERE DATEDIFF( 
+(	SELECT date 
+	FROM trans 
+    ORDER BY date DESC
+    LIMIT 1), 
+(date)
+) < 30;
+
+-- Script transform "date" to date time format
+ SELECT COUNT(*)
+FROM trans
+WHERE DATEDIFF( 
+(	SELECT DATE_FORMAT(date, "%Y-%m-%d") AS correct_date
+	FROM trans 
+    ORDER BY correct_date DESC
+    LIMIT 1), 
+(DATE_FORMAT(date, "%Y-%m-%d"))
+) < 30;
