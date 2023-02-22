@@ -90,10 +90,10 @@ ORDER BY rental_date DESC
 LIMIT 10;
 
 -- Then count the number of "rent" that were made during 30 days (from the latest date of activity)
-SELECT count(*) AS rental_lastmonth
+SELECT COUNT(*) AS rental_lastmonth
 FROM rental
 WHERE rental_date BETWEEN 
-date_sub(
+DATE_SUB(
 (
 	SELECT rental_date FROM rental
     ORDER BY rental_date DESC LIMIT 1

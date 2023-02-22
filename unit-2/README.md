@@ -69,6 +69,9 @@ Reference:
 - [Relational Database Benefits and Limitations (Advantages & Disadvantages)](https://databasetown.com/relational-database-benefits-and-limitations/)
 - [Key difference between relational and non-relational database](https://databasetown.com/relational-vs-non-relational-database/)
 
+=========CASE STUDY=========
+[Case Study Extended (PDF)](https://github.com/ironhack-edu/data_case_study_2/blob/master/case_study_extended.pdf)
+
 
 # 2.01 Activity 3
 Refer to the bank database case study using files_for_activities/case_study_bank.md file.
