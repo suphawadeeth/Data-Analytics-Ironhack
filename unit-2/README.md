@@ -80,11 +80,13 @@ Refer to files_for_activities/mysql_dump.sql database. Load it to Sequel Pro, an
 
 [2.01 Activity 4](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/2.01-activity-4.sql)
 
+# 2.02 Activity 
 [2.02 Activity 1-4](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/2.02-activities.sql)
 
 ## Extra
     [SQL Cheat Sheet](https://www.sqltutorial.org/sql-cheat-sheet/)
 
+# 2.03 Activity 
 [2.03 Activity A](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/unit2_lesson2_A.sql)
 
 [2.03 Activity B](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/unit2_lesson2_B.sql)
