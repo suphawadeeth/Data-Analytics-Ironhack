@@ -50,25 +50,6 @@ WHERE -15 < DATEDIFF(
     ORDER BY date ASC
     LIMIT 1), 
 	(date));
-    
---  
-SELECT *
-FROM trans
-WHERE date BETWEEN (SELECT DATE_SUB((SELECT date
-FROM trans
-WHERE SUBSTRING(date, 1, 2) = 93
-ORDER BY date ASC 
-LIMIT 1), INTERVAL -14 day)
-FROM trans
-LIMIT 1)
-    AND 
-(
-	SELECT date FROM trans
-    WHERE SUBSTRING(date, 1, 2) = 93
-    ORDER BY date ASC LIMIT 1
-    )
-    ;
-    
 
 -- Get all running loans.
 SELECT *

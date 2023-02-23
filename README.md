@@ -5,13 +5,13 @@ This repository holds documents related to my Data Analytics Bootcamp at Ironhac
 All documents are for learning purposes. Feel free to fork, download and use as your own. :)
 
 
-============ ACTIVITY ============
+============ACTIVITY============
 
 - [Unit 2 SQL](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2)
 
 
 
-=========== HOMEWORK ===========
+===========HOMEWORK===========
 
 ### Unit 1 Intro | Python | Machine Learning (ML) | SQL 
 - [Lab | Customer Analysis](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-1/week-3/lab-customer-analysis-round-8.ipynb)
