@@ -33,8 +33,7 @@ LIMIT 1), INTERVAL -14 day)
 FROM trans
 LIMIT 1;
 
--- Get transactions in the first 15 days of 1993.
-
+# Get transactions in the first 15 days of 1993.
 -- If you know the date, the easiest way is to give exact date >> this returns 66 rows
 SELECT *
 FROM trans
@@ -51,10 +50,16 @@ WHERE -15 < DATEDIFF(
     LIMIT 1), 
 	(date));
 
+
 -- Get all running loans.
 SELECT *
 FROM loan
 WHERE status = "C" OR status = "D";
+
+--
+SELECT *
+FROM loan
+WHERE status IN ("C","D");
 
 
 -- Find the different values from the field A2 that start with the letter 'K'.
