@@ -176,7 +176,7 @@ SELECT
 	ROUND(sum(amount)) AS total_amount
 FROM trans
 WHERE account_id = 396
-GROUP BY type
+GROUP BY account_id, type
 ORDER BY type;
 
 
@@ -190,7 +190,7 @@ SELECT
 	ROUND(sum(amount)) AS total_amount
 FROM trans
 WHERE account_id = 396
-GROUP BY type
+GROUP BY account_id, type
 ORDER BY type;
 
 
@@ -204,7 +204,7 @@ SELECT
     CASE WHEN type = "VYDAJ" THEN SUM(amount) END AS outgoing_amount
 FROM trans
 WHERE account_id = 396
-GROUP BY type
+GROUP BY account_id, type
 ORDER BY type;
 
 
