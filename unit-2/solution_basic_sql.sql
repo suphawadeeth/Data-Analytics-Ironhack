@@ -41,10 +41,12 @@ ORDER BY status ASC;
 
 # Query 5
 # What is the loan_id of the highest payment received in the loan table?
-SELECT loan_id
+SELECT loan_id, payments
 FROM loan
 ORDER BY payments DESC
 LIMIT 1;
+# note: either question is wrong or the example (expected result) is.
+
 
 # Query 6
 # What is the loan amount of the lowest 5 account_ids in the loan table? Show the account_id and the corresponding amount
@@ -123,9 +125,10 @@ GROUP BY card.type;
 
 # Query 15
 # Using the loan table, print the top 10 account_ids based on the sum of all of their loan amounts.
-SELECT loan_id, amount
+SELECT account_id, SUM(amount)
 FROM loan
-ORDER BY amount DESC
+GROUP BY account_id
+ORDER BY SUM(amount) DESC
 LIMIT 10;
 
 # Query 16
@@ -150,32 +153,69 @@ GROUP BY date, duration, loan_id
 ORDER BY date ASC, duration ASC;
 
 # Query 18
-# In the trans table, for account_id 396, sum the amount of transactions for each type (VYDAJ = Outgoing, PRIJEM = Incoming). Your output should have the account_id, the type and the sum of amount, named as total_amount. Sort alphabetically by type.
-SELECT *
-FROM trans;
+# In the trans table, for account_id 396, sum the amount of transactions for each type (VYDAJ = Outgoing, PRIJEM = Incoming). 
+# Your output should have the account_id, the type and the sum of amount, named as total_amount. Sort alphabetically by type.
 
-SELECT *
+SELECT account_id, type, sum(amount) AS total_amount
 FROM trans
 WHERE account_id = 396
+GROUP BY account_id, type
+ORDER BY type;
 
-Expected result:
+# Query 19
+# From the previous output, translate the values for type to English, rename the column to transaction_type, round total_amount down to an integer
 
-396	PRIJEM	1028138.6999740601
-396	VYDAJ	1485814.400024414
-Query 19
-From the previous output, translate the values for type to English, rename the column to transaction_type, round total_amount down to an integer
 
-Expected result:
+-- Define both names using case()
+SELECT 
+	account_id, 
+	CASE 
+		WHEN type = "PRIJEM" THEN "INCOMING" 
+		WHEN type = "VYDAJ" THEN "OUTGOING" 
+		END AS transaction_type, 
+	ROUND(sum(amount)) AS total_amount
+FROM trans
+WHERE account_id = 396
+GROUP BY type
+ORDER BY type;
 
-396	INCOMING	1028138
-396	OUTGOING	1485814
-Query 20
-From the previous result, modify your query so that it returns only one row, with a column for incoming amount, outgoing amount and the difference.
 
-Expected result:
+-- Or define 1 name and the rest ('else') = another name.
+SELECT 
+	account_id, 
+	CASE 
+		WHEN type = "PRIJEM" THEN "INCOMING" 
+		ELSE "OUTGOING" 
+		END AS transaction_type, 
+	ROUND(sum(amount)) AS total_amount
+FROM trans
+WHERE account_id = 396
+GROUP BY type
+ORDER BY type;
 
-396	1028138	1485814	-457676
-Query 21
-Continuing with the previous example, rank the top 10 account_ids based on their difference.
 
-Expected result:
+
+# Query 20
+# From the previous result, modify your query so that it returns only one row, with a column for incoming amount, outgoing amount and the difference.
+
+SELECT 
+	account_id, 
+	CASE WHEN type = "PRIJEM" THEN SUM(amount) END AS incoming_amount,
+    CASE WHEN type = "VYDAJ" THEN SUM(amount) END AS outgoing_amount
+FROM trans
+WHERE account_id = 396
+GROUP BY type
+ORDER BY type;
+
+
+
+#Expected result:
+
+#396	1028138	1485814	-457676
+
+# Query 21
+# Continuing with the previous example, rank the top 10 account_ids based on their difference.
+SELECT * 
+FROM trans
+LIMIT 10
+;

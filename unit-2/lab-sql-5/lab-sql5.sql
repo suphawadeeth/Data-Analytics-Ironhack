@@ -103,5 +103,16 @@ WHERE active IN ('0');
 SET FOREIGN_KEY_CHECKS=1; 
 
 
-####======END=====####
+-- Check non-active user in customer table again
+SELECT *
+FROM customer
+WHERE active = 0;
+# return 0 rows
 
+####======END LAB=====####
+
+
+
+-- Insert deleted non-active users back to the customer table
+INSERT INTO customer
+SELECT * FROM deleted_users;
