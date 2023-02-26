@@ -146,11 +146,12 @@ ORDER BY date DESC;
 # count the number of loans issued for each unique loan duration, 
 # ordered by date and duration, both in ascending order. You can ignore days without any loans in your output.
 
-SELECT date, duration, COUNT(loan_id)
+SELECT date, duration, COUNT(*)
 FROM loan
 WHERE date LIKE "9712%"
-GROUP BY date, duration, loan_id
+GROUP BY date, duration
 ORDER BY date ASC, duration ASC;
+
 
 # Query 18
 # In the trans table, for account_id 396, sum the amount of transactions for each type (VYDAJ = Outgoing, PRIJEM = Incoming). 
@@ -199,23 +200,57 @@ ORDER BY type;
 # From the previous result, modify your query so that it returns only one row, with a column for incoming amount, outgoing amount and the difference.
 
 SELECT 
-	account_id, 
-	CASE WHEN type = "PRIJEM" THEN SUM(amount) END AS incoming_amount,
-    CASE WHEN type = "VYDAJ" THEN SUM(amount) END AS outgoing_amount
+	account_id,
+    
+    CASE WHEN type = "PRIJEM" THEN ROUND(SUM(amount), 0) END AS incoming_amount,
+    
+    (SELECT CASE WHEN type = "VYDAJ" THEN ROUND(SUM(amount), 0) END
+	FROM trans
+	WHERE account_id = 396
+	GROUP BY account_id, type
+	ORDER BY type DESC
+	LIMIT 1) AS outgoing_amount,
+    
+    ((SELECT CASE WHEN type = "PRIJEM" THEN ROUND(SUM(amount), 0) END
+	FROM trans
+	WHERE account_id = 396
+	GROUP BY account_id, type
+	ORDER BY type ASC
+	LIMIT 1) - (SELECT CASE WHEN type = "VYDAJ" THEN ROUND(SUM(amount), 0) END
+	FROM trans
+	WHERE account_id = 396
+	GROUP BY account_id, type
+	ORDER BY type DESC
+	LIMIT 1)) AS difference
+    
 FROM trans
 WHERE account_id = 396
 GROUP BY account_id, type
-ORDER BY type;
+ORDER BY type ASC
+LIMIT 1
+;
 
-
-
-#Expected result:
-
-#396	1028138	1485814	-457676
 
 # Query 21
 # Continuing with the previous example, rank the top 10 account_ids based on their difference.
-SELECT * 
+
+
+SELECT 
+	account_id, type, ROUND(SUM(amount), 0)
 FROM trans
-LIMIT 10
-;
+WHERE account_id IN (1,3)
+GROUP BY account_id, type
+ORDER BY account_id;
+
+
+SELECT 
+	account_id, type, ROUND(SUM(amount), 0),
+    
+    ((SELECT CASE WHEN type = "PRIJEM" THEN ROUND(SUM(amount), 0) END FROM trans WHERE account_id BETWEEN 1 AND 3 AND type = "PRIJEM" GROUP BY account_id, type) -
+	(SELECT CASE WHEN type = "VYDAJ" THEN ROUND(SUM(amount), 0) END FROM trans WHERE account_id BETWEEN 1 AND 3 AND type = "VYDAJ" GROUP BY account_id, type)) AS difference
+FROM trans
+WHERE account_id BETWEEN 1 AND 3
+GROUP BY account_id, type
+ORDER BY account_id
+LIMIT 1;
+
