@@ -98,4 +98,6 @@ Refer to files_for_activities/mysql_dump.sql database. Load it to Sequel Pro, an
 
 
 
-# 2.06 Activity 
+# 2.04 Activity 
+
+[Lab-SQL-Basics](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/solution_basic_sql.sql)

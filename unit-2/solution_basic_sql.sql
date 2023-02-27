@@ -242,6 +242,8 @@ SELECT account_id, SUM(CASE type WHEN 'PRIJEM' THEN amount ELSE 0 END) AS incomi
 FROM trans
 WHERE account_id = 396;
 
+
+
 -- Script by Rachelle, beautifully written
 SELECT account_id,
 	FLOOR(SUM(CASE WHEN type = "PRIJEM" THEN amount END)) as incoming_amount,
@@ -258,10 +260,8 @@ WHERE account_id = 396;
 SELECT 
 	account_id,
     ROUND(
-		(SUM(CASE WHEN type = "PRIJEM" 
-			THEN amount END) - 
-		SUM(CASE WHEN type = "VYDAJ" 
-			THEN amount END)), 0
+		(SUM(CASE WHEN type = "PRIJEM" THEN amount END) - 
+		SUM(CASE WHEN type = "VYDAJ" THEN amount END)), 0
             ) AS difference
 FROM trans
 GROUP BY account_id
