@@ -231,78 +231,39 @@ LIMIT 1
 ;
 
 
+
+-- Script by Inga, this is so smart!
+SELECT account_id, SUM(CASE type WHEN 'PRIJEM' THEN amount ELSE 0 END) AS incoming_amount, 
+# If type is equal to 'PRIJEM', then the value of amount is selected. If type is not equal to 'PRIJEM', then 0 is selected instead.
+                SUM(CASE type WHEN 'VYDAJ' THEN amount ELSE 0 END) AS outgoing_amount, 
+# END is used to end a conditional statement.
+                FLOOR(SUM(CASE type WHEN 'PRIJEM' THEN amount ELSE - amount END)) AS difference 
+# Calculating the difference of the sums of incoming and outgoing, rounding down to an integer. 
+FROM trans
+WHERE account_id = 396;
+
+-- Script by Rachelle, beautifully written
+SELECT account_id,
+	FLOOR(SUM(CASE WHEN type = "PRIJEM" THEN amount END)) as incoming_amount,
+    FLOOR(SUM(CASE WHEN type = "VYDAJ" THEN amount END)) as outgoing_amount,
+    (FLOOR(SUM(CASE WHEN type = "PRIJEM" THEN amount END)) - FLOOR(SUM(CASE WHEN type = "VYDAJ" THEN amount END))) as difference
+FROM trans
+WHERE account_id = 396;
+
+
+
 # Query 21
 # Continuing with the previous example, rank the top 10 account_ids based on their difference.
-######## === UNDER THIS LINE IS JUST NOTE === WORK UNDER PROGRESS
-SELECT 
-	account_id, type, ROUND(SUM(amount), 0) 
-FROM trans
-WHERE account_id = 
-CASE  
-	WHEN account_id = 1
-    THEN account_id = 1
-    END
-GROUP BY account_id, type
-ORDER BY account_id;
-
 
 SELECT 
-	account_id, type, ROUND(SUM(amount), 0),
-    
-    ((SELECT CASE WHEN type = "PRIJEM" THEN ROUND(SUM(amount), 0) END FROM trans WHERE type = "PRIJEM" GROUP BY account_id, type) -
-	(SELECT CASE WHEN type = "VYDAJ" THEN ROUND(SUM(amount), 0) END FROM trans WHERE type = "VYDAJ" GROUP BY account_id, type)) AS difference
+	account_id,
+    ROUND(
+		(SUM(CASE WHEN type = "PRIJEM" 
+			THEN amount END) - 
+		SUM(CASE WHEN type = "VYDAJ" 
+			THEN amount END)), 0
+            ) AS difference
 FROM trans
-# WHERE account_id = 1
-GROUP BY account_id, type
-ORDER BY account_id
-# LIMIT 1
-;
-
-
-SELECT 
-	account_id, type, ROUND(SUM(amount), 0),
-    
-    ((SELECT CASE WHEN type = "PRIJEM" THEN ROUND(SUM(amount), 0) END FROM trans WHERE account_id = 1 AND type = "PRIJEM" GROUP BY account_id, type) -
-	(SELECT CASE WHEN type = "VYDAJ" THEN ROUND(SUM(amount), 0) END FROM trans WHERE account_id = 1 AND type = "VYDAJ" GROUP BY account_id, type)) AS difference
-FROM trans
-# WHERE account_id = 1
-GROUP BY account_id, type
-ORDER BY account_id
-# LIMIT 1
-;
-
-
-SELECT account_id,
-
- SUM((SELECT CASE 
- WHEN type = 'VYDAJ' AND account_id = 396 THEN ROUND(SUM(amount),0)
- ELSE 0 END
- FROM trans WHERE account_id = 396 GROUP BY account_id, type LIMIT 1)) AS Outgoing_1,
- 
- SUM((SELECT CASE
- WHEN type ='PRIJEM' THEN ROUND(SUM(amount),0)
- ELSE 0
- END AS Incoming_2 FROM trans WHERE account_id = 396 GROUP BY account_id, type LIMIT 1))
-
-FROM trans
-WHERE account_id = 396
-GROUP BY account_id, type
-;
-
-
-SELECT account_id,
-
- SUM((SELECT (CASE 
- WHEN type = 'VYDAJ' AND account_id = 396 THEN ROUND(SUM(amount),0)
- ELSE 0 END)
- FROM trans WHERE account_id = 396 GROUP BY account_id, type LIMIT 1)) AS Outgoing_1,
- 
- SUM((SELECT (CASE 
- WHEN type = 'PRIJEM' AND account_id = 396 THEN ROUND(SUM(amount),0)
- ELSE 0 END)
- FROM trans WHERE account_id = 396 GROUP BY account_id, type LIMIT 1)) AS Incoming_2
-
-FROM trans
-WHERE account_id = 396
-GROUP BY account_id, type
-;
+GROUP BY account_id
+ORDER BY difference DESC
+LIMIT 10;
