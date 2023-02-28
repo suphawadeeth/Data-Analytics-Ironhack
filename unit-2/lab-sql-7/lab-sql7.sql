@@ -6,13 +6,13 @@ USE sakila;
 SELECT *
 FROM actor;
 
--- list of unique last name >>> 66 rows
+-- list of unique last name that are not repeated >>> return 66 rows
 SELECT last_name, COUNT(last_name) AS count_lastname
 FROM actor
 GROUP BY last_name
 HAVING count_lastname = 1;
 
--- return first_name, last_name, unique_name
+-- Query to return first_name, last_name, count_firstname >>> return 66 rows
 # MAX() function and GROUP BY are used to return a single row, as this case applying max() to string value just to return row of the first_name with condition that having unique last_name
 SELECT 
 	MAX(first_name) AS first_name, 
@@ -22,7 +22,7 @@ FROM actor
 GROUP BY last_name
 HAVING count_firstname = 1;
 
--- Or if don't want to show count_firstname column (show only first & last name)
+-- Or if don't want to show count_firstname column (show only first & last name) >>> return 66 rows
 SELECT 
 	MAX(first_name) AS first_name, 
     CASE 
