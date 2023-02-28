@@ -22,6 +22,16 @@ FROM actor
 GROUP BY last_name
 HAVING count_firstname = 1;
 
+-- Or if don't want to show count_firstname column (show only first & last name)
+SELECT 
+	MAX(first_name) AS first_name, 
+    CASE 
+	WHEN COUNT(DISTINCT first_name) = 1 
+    THEN last_name ELSE NULL 
+    END AS uniq_lastname
+FROM actor
+GROUP BY last_name
+HAVING uniq_lastname IS NOT NULL;
 
 
 # Which last names appear more than once? 
