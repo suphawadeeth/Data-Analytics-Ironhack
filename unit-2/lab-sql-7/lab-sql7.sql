@@ -34,7 +34,7 @@ GROUP BY last_name
 HAVING uniq_lastname IS NOT NULL;
 
 
-# Which last names appear more than once? 
+# Which last names appear more than once? >>> return 55 rows
 # We would use the same logic as in the previous question but this time we want to include the last names of the actors where the last name was present more than once
 SELECT last_name, COUNT(last_name) AS n_lastname
 FROM actor
@@ -46,7 +46,7 @@ HAVING n_lastname > 1;
 SELECT *
 FROM rental;
 
-SELECT staff_id, COUNT(*) AS n_rentals
+SELECT staff_id AS employee_id, COUNT(*) AS num_rentals_by_each_employee
 FROM rental
 GROUP BY staff_id;
 
@@ -55,7 +55,7 @@ GROUP BY staff_id;
 SELECT *
 FROM film;
 
-SELECT release_year AS release_year, COUNT(title) AS released_year
+SELECT release_year AS release_year, COUNT(title) AS num_film_released
 FROM film
 GROUP BY release_year;
 
@@ -64,7 +64,7 @@ GROUP BY release_year;
 SELECT *
 FROM film;
 
-SELECT rating, COUNT(rating) AS n_rating_type
+SELECT rating, COUNT(rating) AS num_of_film
 FROM film
 GROUP BY rating;
 
@@ -74,7 +74,7 @@ GROUP BY rating;
 SELECT *
 FROM film;
 
-SELECT rating, COUNT(rating) AS n_rating_type, ROUND(AVG(length), 2) AS avg_length
+SELECT rating AS rating_type, ROUND(AVG(length), 2) AS avg_film_length
 FROM film
 GROUP BY rating;
 
@@ -83,8 +83,8 @@ GROUP BY rating;
 SELECT *
 FROM film;
 
-SELECT rating, COUNT(rating) AS n_rating_type, ROUND(AVG(length), 2) AS avg_length
+SELECT rating AS rating_type, ROUND((AVG(length))/60, 2) AS avg_length_hour
 FROM film
 GROUP BY rating
-HAVING avg_length > 60*2;
+HAVING avg_length_hour > 2;
 
