@@ -6,10 +6,23 @@ USE sakila;
 SELECT *
 FROM actor;
 
-SELECT first_name, last_name, COUNT(last_name) AS n_lastname
+-- list of unique last name >>> 66 rows
+SELECT last_name, COUNT(last_name) AS count_lastname
 FROM actor
-GROUP BY first_name, last_name
-HAVING n_lastname;
+GROUP BY last_name
+HAVING count_lastname = 1;
+
+-- return first_name, last_name, unique_name
+# MAX() function and GROUP BY are used to return a single row, as this case applying max() to string value just to return row of the first_name with condition that having unique last_name
+SELECT 
+	MAX(first_name) AS first_name, 
+	last_name,
+	COUNT(DISTINCT first_name) AS count_firstname
+FROM actor
+GROUP BY last_name
+HAVING count_firstname = 1;
+
+
 
 # Which last names appear more than once? 
 # We would use the same logic as in the previous question but this time we want to include the last names of the actors where the last name was present more than once
