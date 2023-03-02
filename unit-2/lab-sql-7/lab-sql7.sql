@@ -29,8 +29,8 @@ SELECT
 	MAX(first_name) AS first_name, 
     CASE 
 	WHEN COUNT(last_name) = 1 
-    THEN last_name ELSE NULL 
-    END AS uniq_lastname
+	THEN last_name ELSE NULL 
+	END AS uniq_lastname
 FROM actor
 GROUP BY last_name
 HAVING uniq_lastname IS NOT NULL;
