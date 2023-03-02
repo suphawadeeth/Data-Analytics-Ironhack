@@ -38,10 +38,11 @@ HAVING uniq_lastname IS NOT NULL;
 
 # Which last names appear more than once? >>> return 55 rows
 # We would use the same logic as in the previous question but this time we want to include the last names of the actors where the last name was present more than once
-SELECT last_name, COUNT(last_name) AS n_lastname
+
+SELECT last_name, COUNT(last_name) AS num_of_actor_with_same_lastname
 FROM actor
 GROUP BY last_name
-HAVING n_lastname > 1;
+HAVING num_of_actor_with_same_lastname > 1;
 
 
 # Using the rental table, find out how many rentals were processed by each employee.
