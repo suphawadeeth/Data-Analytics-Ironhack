@@ -41,7 +41,7 @@ ON actor.actor_id = film_actor.actor_id
 GROUP BY film_actor.actor_id
 ORDER BY num_of_roles DESC
 LIMIT 1;
-# GINA DEGENERES appears 42 roles
+# GINA DEGENERES appeared in 42 films
 
 # Which is the most active customer (the customer that has rented the most number of films)? 
 # Hint: Use appropriate join between the tables "customer" and "rental" and count the rental_id for each customer.
@@ -71,5 +71,5 @@ ON inventory.inventory_id = film.film_id
 GROUP BY inventory.film_id
 ORDER BY rent_num_of_the_film DESC
 LIMIT 1;
-
+# Bucket Brotherhood is the most rented film = 34 
 
