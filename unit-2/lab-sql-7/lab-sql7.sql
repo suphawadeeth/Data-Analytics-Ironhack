@@ -19,12 +19,11 @@ FROM actor
 GROUP BY last_name
 HAVING count_lastname = 1;
 # GROUP BY last_name >> return 121 rows (including last_name that are repeated), 
-# then select first_name (using max() will return only 1 row of those who have repeated last_name
-# e.g. in case that last_name are repeated 3 times, it will present only one person from this group of last_name by using MAX(first_name) >> hence return 121 rows, 
+# then select first_name (using max() will return only 1 row of those who have repeated last_name e.g. in case that last_name are repeated 3 times, it will present only one person from this group of last_name by using MAX(first_name) >> hence return 121 rows, 
 # so the rows of first_name & last_name are now equal and be able to present in the outcome
-# But we want actor name that have unique last name >> so use COUNT(last_name) + HAVING COUNT(last_name) = 1 to return only a row that have unique last_name >> return 66 rows
+# But we want actor's names that have unique last name >> so use COUNT(last_name) + HAVING COUNT(last_name) = 1 to return only a row that have unique last_name >> return 66 rows
 
--- Or if don't want to show count_firstname column (show only first & last name)
+-- Or if don't want to show count_lastname column (show only first & last name)
 # modify from query above to return first_name & uniq_lastname >>> return 66 rows
 SELECT 
 	MAX(first_name) AS first_name, 
