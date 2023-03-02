@@ -10,21 +10,26 @@ FROM actor
 GROUP BY last_name
 HAVING count_lastname = 1;
 
--- Query to return first_name, last_name, count_firstname >>> return 66 rows
-# MAX() function and GROUP BY are used to return a single row, as this case applying max() to string value just to return row of the first_name with condition that having unique last_name
+-- Query to return first_name, last_name, count_lastname >>> return 66 rows
 SELECT 
 	MAX(first_name) AS first_name, 
 	last_name,
-	COUNT(DISTINCT first_name) AS count_firstname
+	COUNT(last_name) AS count_lastname
 FROM actor
 GROUP BY last_name
-HAVING count_firstname = 1;
+HAVING count_lastname = 1;
+# GROUP BY last_name >> return 121 rows (including last_name that are repeated), 
+# then select first_name (using max() will return only 1 row of those who have repeated last_name
+# e.g. in case that last_name are repeated 3 times, it will present only one person from this group of last_name by using MAX(first_name) >> hence return 121 rows, 
+# so the rows of first_name & last_name are now equal and be able to present in the outcome
+# But we want actor name that have unique last name >> so use COUNT(last_name) + HAVING COUNT(last_name) = 1 to return only a row that have unique last_name >> return 66 rows
 
--- Or if don't want to show count_firstname column (show only first & last name) >>> return 66 rows
+-- Or if don't want to show count_firstname column (show only first & last name)
+# modify from query above to return first_name & uniq_lastname >>> return 66 rows
 SELECT 
 	MAX(first_name) AS first_name, 
     CASE 
-	WHEN COUNT(DISTINCT first_name) = 1 
+	WHEN COUNT(last_name) = 1 
     THEN last_name ELSE NULL 
     END AS uniq_lastname
 FROM actor
