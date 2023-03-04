@@ -26,6 +26,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | SQL Basics](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/solution_basic_sql.sql)
 - [Lab | SQL Queries 7](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/lab-sql-7/lab-sql7.sql)
 - [Lab | SQL Queries 8](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-2/lab-sql-8/lab-sql8.sql)
+- [Lab | SQL Queries 9](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2/lab-sql-9)
 
 
 ### Unit 2.5 Mini Project
