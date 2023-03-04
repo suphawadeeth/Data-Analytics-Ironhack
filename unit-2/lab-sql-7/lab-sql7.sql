@@ -10,6 +10,7 @@ FROM actor
 GROUP BY last_name
 HAVING count_lastname = 1;
 
+
 -- Query to return first_name, last_name, count_lastname >>> return 66 rows
 SELECT 
 	MAX(first_name) AS first_name, 
