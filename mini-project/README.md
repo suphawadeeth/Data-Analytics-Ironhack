@@ -15,7 +15,7 @@ Best practice for presentation:
 ## About The Mini-Project
 #### Main Objection of The Project
     - End-to-end Data Analysis
-    - We focus on linear regression model for this project)
+    - We focus on linear regression model for this project
 
 ## Objective (for our group):
     - Decide the best replacement for a transferred player
@@ -57,7 +57,11 @@ Target >> OVA, POT (potential)
 - Setup the project question >> DONE (Find the best replacement for a transferred player)
 ### 2. Understand data / EDA (BEFORE THURSDAY - communicate via Discord)
 - Clean data 
->> In this step, we work independently, then share our progress on Discord. This EDA should be done before Thursday so we will start to discuss the result from this process during the class.
+>> In this step, we work independently, then share our progress on Discord. 
+
+>> This EDA should be done before Thursday so we will start to discuss the result from this process during the class.
+
+
 >> Note: POSITION WE WANT TO REPLACE 'CAM'
     - Drop irrelevant cols
         - image 
