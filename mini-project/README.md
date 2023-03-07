@@ -81,7 +81,7 @@ Target >> OVA, POT (potential)
 
        
 #### Visualization
-- Separate numerial & cat
+- Separate numerial & categorical
 - Check distribution
 - X-y split
 - Normalize/Standardize data if needed 
