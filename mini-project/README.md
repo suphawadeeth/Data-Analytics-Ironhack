@@ -22,7 +22,7 @@ Best practice for presentation:
 
 ## ========= BRAINSTORM ========= 
 
-### Question during the work process:
+### Questions during the work process:
 #### Who is our audience? Who is our client?
 - Investor? 
 - Team Manager?
