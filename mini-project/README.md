@@ -64,20 +64,20 @@ Target >> OVA, POT (potential)
 
 >> Note: POSITION WE WANT TO REPLACE 'CAM'
 
-    - Drop irrelevant cols
+- Drop irrelevant cols
 
-        - image 
+    - image 
 
-        - loan date end
+    - loan date end
 
-        - gender
+    - gender
 
-        etc. 
+    etc. 
 
-    - Rename the remaining cols (lowercase, remove the space and replace with _)
+- Rename the remaining cols (lowercase, remove the space and replace with _)
 
-    - Decide what are the most important features
-    
+- Decide what are the most important features
+
 
        
 #### Visualization
