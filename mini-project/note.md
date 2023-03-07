@@ -1,10 +1,10 @@
 # FIFA - MoneyBall: Mini-Project
-Group members:
+### Group members:
 - André Condre
 - Hamideh Aghaei
 - Suphawadee Mangold
 
-#### Presentation
+### Presentation
 Rules:
 - 10 minutes
 - Leave 3-4 minutes for Q&A
@@ -18,9 +18,9 @@ Best practice for presentation:
     - We focus on linear regression model for this project)
 
 ## Objective (for our group):
-- Decide the best replacement for a transferred player
+    - Decide the best replacement for a transferred player
 
-========= BRAINSTORM ========= 
+## ========= BRAINSTORM ========= 
 
 ### Question during the work process:
 #### Who is our audience? Who is our client?
@@ -52,7 +52,7 @@ Characteristics for each position
 
 Target >> OVA, POT (potential)
 
-========= END-TO-END STEPS ========= 
+## ========= END-TO-END STEPS ========= 
 ### 1. Understand project problem (DONE)
 - Setup the project question >> DONE (Find the best replacement for a transferred player)
 ### 2. Understand data / EDA (BEFORE THURSDAY - communicate via Discord)
@@ -83,7 +83,7 @@ Target >> OVA, POT (potential)
 - Apply the model >> predict the outcome
 - Improve the model
 
-#### Useful links:
+### Useful links:
 
 - [Most Interesting Facts About FIFA Players from a Data Scientist Perspective](https://medium.com/data-storytelling/most-interesting-facts-about-fifa-players-from-a-data-scientist-perspective-1e16f2cb33c4)
 - [Meaning of GA, GF, GD, and Other Common Football Abbreviations](https://howtheyplay.com/team-sports/abbrev-GA-GF-GS-GD-MP-Caps-meaning-soccer)
