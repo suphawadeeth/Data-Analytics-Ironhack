@@ -97,6 +97,8 @@ Target >> OVA, POT (potential)
 
 ### Useful links:
 
+- [Prediction of Football Player Value using Bayesian Ensemble
+Approach](https://arxiv.org/pdf/2206.13246.pdf)
 - [Most Interesting Facts About FIFA Players from a Data Scientist Perspective](https://medium.com/data-storytelling/most-interesting-facts-about-fifa-players-from-a-data-scientist-perspective-1e16f2cb33c4)
 - [Meaning of GA, GF, GD, and Other Common Football Abbreviations](https://howtheyplay.com/team-sports/abbrev-GA-GF-GS-GD-MP-Caps-meaning-soccer)
 - [FIFA 21: EDA and Visualization](https://www.kaggle.com/code/paramarthasengupta/fifa-21-eda-and-visualization/notebook)
