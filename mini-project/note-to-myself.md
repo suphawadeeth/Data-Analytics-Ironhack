@@ -84,8 +84,10 @@ Remove multicolinearity >> DONE
 ### 4. Finally, answer the question
 - I decided to use SQL query, then later on will plot the result using python pandas.
 
-#### Our Objective: Decide the best replacement for a transferred player
+Updated 09.03.2023 >> No need to use SQL, python pandas is enough for this project & plotting graph
 
+
+#### Our Objective: Decide the best replacement for a transferred player
 What is the criteria of "best replacement"?
 - After created model and predict the outcome (BOV/OVA), we found these factors are good predictors:
 
