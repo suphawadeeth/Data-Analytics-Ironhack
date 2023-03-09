@@ -9,8 +9,9 @@ Rules:
 - 10 minutes
 - Leave 3-4 minutes for Q&A
 
-Best practice for presentation:
+Best practice for **presentation**:
 - Define audience - who is the client (kid, adult)?
+- Added note (09.03.2023): Best is to keep it simple that the 5 years old can understand it.
 
 ## About The Mini-Project
 #### Main Objection of The Project
@@ -30,7 +31,7 @@ Best practice for presentation:
 
 #### Why? 
 - They want to buy the best player, to build the best team
-- With cheapest one, but nest quality
+- With cheapest one, but best quality
 
 #### What are they looking for? (In best of each position)
     
@@ -55,7 +56,7 @@ Target >> OVA, POT (potential)
 ## ========= END-TO-END STEPS ========= 
 ### 1. Understand project problem (DONE)
 - Setup the project question >> DONE (Find the best replacement for a transferred player)
-### 2. Understand data / EDA (BEFORE THURSDAY - communicate via Discord)
+### 2. Understand data / EDA (DONE)
 - Clean data 
 >> In this step, we work independently, then share our progress on Discord. 
 
@@ -87,16 +88,27 @@ Target >> OVA, POT (potential)
 - Normalize/Standardize data if needed 
 - Check multicolinearity 
 
-### 3. Processing Data
+### 3. Processing Data (We should have our best model on Friday >> comparing prediction matrics: R^2, RSME,RME, and choose the best one)
 - Encoding (cat)
 - Concat (num & cat)
 - Train-test split
 - Training the model (with train set)
 - Apply the model >> predict the outcome
-- Improve the model
+- Improve the model 
+
+### 4. Create Presentation 
+- On Saturday, we should have our graphs/visulization that represent the BEST REPLACEMENT. (Dateline: Saturday morning!!!)
+
+Presentation (note from Laz):
+- present your findings
+- include visualizazion
+- why you choose that & this?
+- why is important?
+- etc.
+
+
 
 ### Useful links:
-
 - [Prediction of Football Player Value using Bayesian Ensemble
 Approach](https://arxiv.org/pdf/2206.13246.pdf)
 - [Most Interesting Facts About FIFA Players from a Data Scientist Perspective](https://medium.com/data-storytelling/most-interesting-facts-about-fifa-players-from-a-data-scientist-perspective-1e16f2cb33c4)
