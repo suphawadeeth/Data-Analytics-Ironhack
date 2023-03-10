@@ -11,7 +11,7 @@ Rules:
 
 Best practice for **presentation**:
 - Define audience - who is the client (kid, adult)?
-- Added note (09.03.2023): Best is to keep it simple that the 5 years old can understand it.
+- Added note (09.03.2023): Best is to keep it simple that the 5 year-old can understand it.
 
 ## About The Mini-Project
 #### Main Objection of The Project
@@ -103,7 +103,7 @@ Presentation (note from Laz):
 - present your findings
 - include visualizazion
 - why you choose that & this?
-- why is important?
+- why is it important?
 - etc.
 
 
@@ -111,6 +111,7 @@ Presentation (note from Laz):
 ### Useful links:
 - [Prediction of Football Player Value using Bayesian Ensemble
 Approach](https://arxiv.org/pdf/2206.13246.pdf)
+- [Overfitting Regression Model](https://statisticsbyjim.com/regression/interpret-adjusted-r-squared-predicted-r-squared-regression/)
 - [Most Interesting Facts About FIFA Players from a Data Scientist Perspective](https://medium.com/data-storytelling/most-interesting-facts-about-fifa-players-from-a-data-scientist-perspective-1e16f2cb33c4)
 - [Meaning of GA, GF, GD, and Other Common Football Abbreviations](https://howtheyplay.com/team-sports/abbrev-GA-GF-GS-GD-MP-Caps-meaning-soccer)
 - [FIFA 21: EDA and Visualization](https://www.kaggle.com/code/paramarthasengupta/fifa-21-eda-and-visualization/notebook)
