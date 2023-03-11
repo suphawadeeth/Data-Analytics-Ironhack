@@ -4,8 +4,10 @@
 - Hamideh Aghaei
 - Suphawadee Mangold
 
-Note: our group uses trello to plan project and communicate mainly via Discord
+Note: our group uses trello to plan project https://trello.com/b/JdCFY6m7/fifa-project and communicate mainly via Discord
 
+### Project Detail
+- Project detail can be found [here](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/mini-project/project_details.md)
 
 ### Presentation
 Rules:
@@ -15,6 +17,9 @@ Rules:
 Best practice for **presentation**:
 - Define audience - who is the client (kid, adult)?
 - Added note (09.03.2023): Best is to keep it simple that the 5 year-old can understand it.
+
+Our presentation can be found [here](https://github.com/hamiAgh/Data-Analytics-Ironhack/blob/main/mini-project/FIFA%20Project.pdf)
+
 
 ## About The Mini-Project
 #### Main Objection of The Project
