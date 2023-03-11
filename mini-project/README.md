@@ -4,6 +4,9 @@
 - Hamideh Aghaei
 - Suphawadee Mangold
 
+Note: our group uses trello to plan project and communicate mainly via Discord
+
+
 ### Presentation
 Rules:
 - 10 minutes
