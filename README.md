@@ -31,6 +31,9 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 ### Unit 2.5 Mini Project
 
+- [Mini Project | FIFA - MoneyBall](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/mini-project)
+
+
 ### Unit 3 SQL | ML
 
 ### Unit 4 ML
