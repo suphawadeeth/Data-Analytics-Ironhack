@@ -116,14 +116,28 @@ Next, we want to visualize the result of best players for replacement
 My approach (1-2 graphs, max is 3):
 1. Find top 5 players (or maybe 10), rank by BOV (or OVA), show graph x=players, y=BOV score
 2. Show the ability of those 5 players (bar graph),group by player, bargraph of those quality (that we want to show)
-3. Take money into account, show graph of money related topics for these 5 player
+3. Take money into account, show graph of money related topics for these 5 players
 
 
 Updated 11.03.2023:
+- After the presentation today, I needed to leave the apartment immediately because I had an appointment. So I didn't have much time to say a word. I'm here now to journal something about this journey.
+
+#### About the project presentation
 - We were spending too much time wandering about to get the best model. Even we get high r2 but we doubt if it's too good to be true. We lost time on that too much.
 - We started to plot graph in the very last hour before the presentation begin. 
 - I recalled to look at the clock, it showed 12:37 and we haven't start putting any graph on the powerpoint yet.
 - But we sprinted it up & finally made it through.
 - Through struggle but it was well executed from our team for the time that we have.
 - We simplify the presentation as 12 y/o can understand that he will get the best player as he wanted. 
+
+#### About my teammates: Hamideh & Andre
 - I'm so thankful to my teammates, Hamideh (smart yet humble) & Andre (intelligent, enthusiastic), you are beautiful people to work with. Hardworking and encouraging. Thank you so much! Love you guys!!
+
+
+#### Follow up the project
+- Since we were spending too much time doubting if our model was too good to be true. After I came back and now have some time to sit & work on it again.
+- After Andre added the scatter plot to check the Regression Fit. I did also check the predicted R^2 comparing to those R^2 & adjusted R^2. I have to say "well done!" 
+
+- Then it comes to the conclusion (confidently now) that our model is perfect & all the prediction metrics go along well with each other, not just they are close but they gave the same result!
+- Again thanks to the team afford. 
+- And I have to also say, thanks to the dataset.  :)
