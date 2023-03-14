@@ -36,6 +36,8 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 ### Unit 3 SQL | ML
 
+- [Lab | SQL - JOIN](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-3/lab-sql-join.sql)
+
 ### Unit 4 ML
 
 ### Unit 5 Mid Project
