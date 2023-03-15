@@ -20,6 +20,7 @@ def battle():
     elif tie > gandalf_win and saruman_win:
         solution1 = print("Tie")
     #print(tie)
+        print(solution1)
         return solution1
 
 battle()

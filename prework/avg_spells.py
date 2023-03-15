@@ -37,16 +37,17 @@ def avg_spells():
     avg_spells = 0
     if gandalf_win >= 3:
         avg_spells = sum(gandalf_spells)/len(gandalf_spells)
-        #print("Gandalf wins")
+        print("Gandalf wins")
+        print(avg_spells)
+        return avg_spells
     elif saruman_win >= 3:
         avg_spells = sum(saruman_spells)/len(saruman_spells)
-        #print("Suruman wins")
-    else: pass
-        #print("Tie")
-    #print(avg_spells)
-
-
-    solution2 = avg_spells
-    return solution2
-
+        print("Suruman wins")
+        print(avg_spells)
+        return avg_spells 
+    else: 
+        print("Tie")
+        print(avg_spells)
+        return avg_spells 
+        
 avg_spells()

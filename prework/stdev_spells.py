@@ -39,6 +39,7 @@ def stdev_spells():
         #print("Tie")
     solution3 = std_winner
     #print(solution3)
+    print(solution3)
     return solution3
 
 stdev_spells()

@@ -24,6 +24,7 @@ def escape():
                 daylight = True
                 #print(total_days)
                 #print(total_distance)
+        print("Days: ", total_days)
         return total_days
 
 
