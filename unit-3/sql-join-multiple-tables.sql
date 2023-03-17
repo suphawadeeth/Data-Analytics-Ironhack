@@ -68,7 +68,6 @@ LIMIT 1
 
 
 # Display the most frequently rented movies in descending order.
-
 SELECT 	
 	F.title,
 	COUNT(*) AS num_of_rents
@@ -84,8 +83,32 @@ ORDER BY num_of_rents DESC
 
 
 
-# Is "Academy Dinosaur" available for rent from Store 1?
+# List the top five genres in gross revenue in descending order
 
+SELECT 	
+	C.name, SUM(P.amount) AS gross_revenue_dollars
+FROM film F
+LEFT JOIN film_category FC
+ON F.film_id = FC.film_id
+LEFT JOIN category C
+ON FC.category_id = C.category_id
+LEFT JOIN inventory I
+ON F.film_id = I.film_id
+LEFT JOIN rental R
+ON R.inventory_id = I.inventory_id
+LEFT JOIN payment P
+ON R.rental_id = P.rental_id
+GROUP BY C.name
+ORDER BY gross_revenue_dollars DESC
+LIMIT 5
+;
+
+
+
+
+
+
+# Is "Academy Dinosaur" available for rent from Store 1?
 SELECT 	
 	F.title, S.store_id
 FROM film F
