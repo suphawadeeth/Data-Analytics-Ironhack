@@ -11,8 +11,6 @@ while active:
     input_list.append(word)
     if word == "":
         active = False
-    #elif input == "":
-     #   break
 
 for i in input_list:
     if i != "":
