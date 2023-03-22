@@ -40,7 +40,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | SQL - JOIN](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-3/lab-sql-join/lab-sql-join.sql)
 - [Lab | SQL Joins on multiple tables](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-3/lab-sql-join-multiple-tables/sql-join-multiple-tables.sql)
 - [Lab | SQL Self and cross join](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-3/lab-self-cross-join/lab-self-cross-join.sql)
-
+- [LAB | SQL Subqueries](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-3/lab-sql-subqueries/lab-sql-subqueries.sql)
 
 
 
