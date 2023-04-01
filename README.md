@@ -46,6 +46,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 
 ### Unit 4 ML
+- [Lab | Cleaning numerical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-cleaning-numerical-data/lab-cleaning-numerical-data.ipynb)
 
 ### Unit 5 Mid Project
 
