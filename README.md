@@ -48,7 +48,9 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 ### Unit 4 ML
 - [LAB | Cleaning numerical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-cleaning-numerical-data/lab-cleaning-numerical-data.ipynb)
-- [LAB | Cleaning categorical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-4/lab-cleaning-categorical-data)
+- [LAB | Cleaning categorical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-cleaning-categorical-data/lab-cleaning-categorical-data.ipynb)
+- [LAB | Feature extraction](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-feature-extraction/lab-feature-extraction.ipynb)
+
 
 ### Unit 5 Mid Project
 
