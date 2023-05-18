@@ -30,7 +30,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [LAB | SQL Queries 9](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-2/lab-sql-9)
 
 
-### Unit 2.5 Mini Project
+### Mini Project
 
 - [Mini Project | FIFA - MoneyBall](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/mini-project)
 
@@ -50,11 +50,18 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [LAB | Cleaning numerical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-cleaning-numerical-data/lab-cleaning-numerical-data.ipynb)
 - [LAB | Cleaning categorical data](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-cleaning-categorical-data/lab-cleaning-categorical-data.ipynb)
 - [LAB | Feature extraction](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-feature-extraction/lab-feature-extraction.ipynb)
+- [LAB | Data cleaning and wrangling](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-4/lab-data-cleaning-and-wrangling/lab-data-cleaning-wrangling.ipynb)
+- [LAB | Comparing regression models]()
+- [LAB | Getting started with Tableau](https://github.com/suphawadeeth/Data-Analytics-Ironhack/tree/main/unit-4/lab-getting-start-tableau)
 
 
 ### Unit 5 Mid Project
 
+- [Binary Classification | Credit Card Marketing](https://github.com/jebadca/Mid_Project_Namaste)
+
 ### Unit 6 Advanced Tableau | Advanced SQL | Macros Excel
+
+- [Lab | Tableau - Manipulating data from multiple sources](https://public.tableau.com/app/profile/suphawadee3172/viz/LabTableau-Manipulatingdatafrommultiplesources_16844167546110/top4?publish=yes)
 
 ### Unit 7 Feature sel | Engineering | STATS P-VALUES, ANOVA | Decision Trees | Random Forests
 
