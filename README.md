@@ -62,6 +62,10 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 ### Unit 6 Advanced Tableau | Advanced SQL | Macros Excel
 
 - [Lab | Tableau - Manipulating data from multiple sources](https://public.tableau.com/app/profile/suphawadee3172/viz/LabTableau-Manipulatingdatafrommultiplesources_16844167546110/top4?publish=yes)
+- [Lab | LOD expressions and Dashboards](https://public.tableau.com/app/profile/suphawadee3172/viz/lab-lod-expression/Dashboard-lod-expression?publish=yes)
+- [Lab | Aggregation Revisited - Subqueries](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-6/lab-aggregation-revisited-subqueries/lab-aggregation-revisited-subqueries.sql)
+- [Lab | Stored procedures](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-6/lab-stored-procedures/lab-stored-procedures.sql)
+
 
 ### Unit 7 Feature sel | Engineering | STATS P-VALUES, ANOVA | Decision Trees | Random Forests
 
