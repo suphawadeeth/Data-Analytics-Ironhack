@@ -70,7 +70,9 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 
 ### Unit 7 Feature sel | Engineering | STATS P-VALUES, ANOVA | Decision Trees | Random Forests
 - [Lab | Revisiting Machine Learning Case Study](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-revisiting-machine-learning/revisiting-machine-learning.ipynb)
-- [Lab | Feature Engineering]()
+- [Lab | Feature Engineering](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-feature-engineering/lab-feature-engineering.ipynb)
+- [Lab | Inferential statistics](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-inferential-statistics/lab-inferential-statistics.ipynb)
+- [Lab | Inferential statistics - T-test & P-value](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-t-tests-p-values/lab-t-tests-p-values.ipynb)
 
 ### Unit 8 HTML | Webscrapping | API | Clustering
 
