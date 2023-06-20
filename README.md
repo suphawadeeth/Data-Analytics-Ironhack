@@ -76,6 +76,7 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | Inferential statistics - ANOVA](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-inferential-statistics-anova/lab-inferential-statistics-anova.ipynb)
 - [Lab | Handling Data Imbalance in Classification Models](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-handling-data-imbalance-classification/lab-handling-data-imbalance-classification.ipynb)
 - [Lab | Cross Validation](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-cross-validation/lab-cross-validation.ipynb)
+- [Lab | Random Forests](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-random-forests/lab-random-forests.ipynb)
 
 
 ### Unit 8 HTML | Webscrapping | API | Clustering
