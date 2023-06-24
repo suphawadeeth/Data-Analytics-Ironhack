@@ -77,9 +77,9 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | Handling Data Imbalance in Classification Models](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-handling-data-imbalance-classification/lab-handling-data-imbalance-classification.ipynb)
 - [Lab | Cross Validation](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-cross-validation/lab-cross-validation.ipynb)
 - [Lab | Random Forests](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-7/lab-random-forests/lab-random-forests.ipynb)
-- [Lab | Web Scraping Single Page](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-single-page/lab-web-scraping-single-page.ipynb)
-
 
 ### Unit 8 HTML | Webscrapping | API | Clustering
+- [Lab | Web Scraping Single Page](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-single-page/lab-web-scraping-single-page.ipynb)
+- [Lab | Web Scraping Multiple Pages](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-multiple-pages/lab-web-scraping-multiple-page.ipynb)
 
 ### Unit 9 Final Project
