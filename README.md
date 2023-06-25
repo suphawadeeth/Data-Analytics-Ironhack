@@ -81,5 +81,6 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 ### Unit 8 HTML | Webscrapping | API | Clustering
 - [Lab | Web Scraping Single Page](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-single-page/lab-web-scraping-single-page.ipynb)
 - [Lab | Web Scraping Multiple Pages](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-multiple-pages/lab-web-scraping-multiple-page.ipynb)
+- [Lab | Working with APIs](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-working-with-api/lab-working-with-api.ipynb)
 
 ### Unit 9 Final Project
