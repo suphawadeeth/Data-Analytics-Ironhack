@@ -83,5 +83,6 @@ All documents are for learning purposes. Feel free to fork, download and use as 
 - [Lab | Web Scraping Multiple Pages](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-web-scraping-multiple-pages/lab-web-scraping-multiple-page.ipynb)
 - [Lab | Working with APIs](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-working-with-api/lab-working-with-api.ipynb)
 - [Lab | API wrappers - Create your collection of songs & audio features](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-api-wrappers/lab_api_wrappers.ipynb)
+- [Lab | Unsupervised learning intro](https://github.com/suphawadeeth/Data-Analytics-Ironhack/blob/main/unit-8/lab-unsupervised-learning-intro/lab-unsupervised-learning-intro.ipynb)
 
 ### Unit 9 Final Project
